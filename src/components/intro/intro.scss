@@ -1,0 +1,15 @@
+.intro {
+  background-color: brown;
+  height: 100vh;
+  display: flex;
+
+  &__left {
+    border: 2px solid green;
+    flex: 1;
+  }
+
+  &__right {
+    border: 2px solid blue;
+    flex: 1;
+  }
+}
