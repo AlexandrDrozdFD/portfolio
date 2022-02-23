@@ -1,15 +1,81 @@
 .intro {
-  background-color: brown;
   height: 100vh;
   display: flex;
 
   &__left {
-    border: 2px solid green;
     flex: 1;
+    display: flex;
+    align-items: center;
+
+    .left-wrap {
+      padding: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &__text {
+        font-size: 3rem;
+        font-weight: 300;
+      }
+
+      &__name {
+        font-size: 6rem;
+      }
+
+      &__title {
+        height: 5rem;
+        overflow: hidden;
+
+        .title {
+          height: 100%;
+          animation: move 10s ease-in-out infinite alternate;
+
+          @keyframes move {
+            25% {
+              transform: translateY(-5rem);
+            }
+            50% {
+              transform: translateY(-10rem);
+            }
+            75% {
+              transform: translateY(-15rem);
+            }
+            100% {
+              transform: translateY(-20rem);
+            }
+          }
+
+          &__item {
+            height: 5rem;
+            font-size: 3rem;
+            color: #59b256;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
   }
 
   &__right {
-    border: 2px solid blue;
     flex: 1;
+    position: relative;
+
+    .person-bg {
+      height: 100%;
+      width: 100%;
+      clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+      background-color: #59b256;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .person {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      position: absolute;
+    }
   }
 }
