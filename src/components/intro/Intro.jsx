@@ -1,9 +1,9 @@
 import './intro.scss';
-import me from '../../img/me.png'
+// import me from '../../img/me.png';
 
 const Intro = () => {
   return (
-    <div className="intro">
+    <section className="intro">
       <div className="intro__left">
         <div className="left-wrap">
           <div className="left-wrap__text">
@@ -28,9 +28,9 @@ const Intro = () => {
       </div>
       <div className="intro__right">
         <div className="person-bg"></div>
-        <img src={me} alt="person" className='person'/>
+        {/* <img src={me} alt="person" className='person'/> */}
       </div>
-    </div>
+    </section>
   );
 };
 
