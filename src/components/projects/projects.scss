@@ -1,0 +1,30 @@
+.projects {
+  // height: 100vh; //todo
+  padding: 10rem 10rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__caption {
+    width: 65%;
+
+    .projects-title {
+      color: #59b256;
+      font-size: 2em;
+    }
+
+    .projects-desc {
+      margin: 2rem 0;
+    }
+  }
+
+  &__items {
+    // width: 100%; todo
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}

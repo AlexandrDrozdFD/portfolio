@@ -1,0 +1,23 @@
+.project {
+  border: 0.2rem solid rgb(233, 227, 227);
+  margin: 2rem 1rem;
+  width: 30rem; //todo
+  height: 5rem; //todo
+  overflow: hidden; //todo
+
+  &__browser {
+    height: 2rem;
+    background-color: rgb(233, 227, 227);
+    display: flex;
+    align-items: center;
+    
+    
+    .circle {
+      height: 0.6rem;
+      width: 0.6rem;
+      background-color: #ffffff;
+      border-radius: 50%;
+      margin: 0 0.1rem;
+    }
+  }
+}

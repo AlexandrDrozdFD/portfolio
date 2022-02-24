@@ -1,4 +1,4 @@
-import './About.scss';
+import './about.scss';
 import face from '../../img/face.jpg';
 
 const About = () => {
@@ -7,7 +7,7 @@ const About = () => {
       <div className="about__left">
         {/* <div className="card card-bg"></div> */}
         <div className="card">
-          <img src={face} alt="" className="card__img" />
+          <img src={face} alt="Alexander" className="card__img" />
         </div>
       </div>
       <div className="about__right">
