@@ -1,16 +1,17 @@
 .project {
-  border: 0.2rem solid rgb(233, 227, 227);
+  border: 0.2rem solid rgb(190, 240, 180);
   margin: 2rem 1rem;
   width: 30rem; //todo
-  height: 5rem; //todo
+  height: 18rem; //todo
   overflow: hidden; //todo
 
   &__browser {
     height: 2rem;
-    background-color: rgb(233, 227, 227);
+    background-color: rgb(190, 240, 180);
     display: flex;
     align-items: center;
-    
+    z-index: 9;
+    position: sticky;
     
     .circle {
       height: 0.6rem;
@@ -19,5 +20,17 @@
       border-radius: 50%;
       margin: 0 0.1rem;
     }
+  }
+
+  &__link {
+
+    .project-screenshot {
+      width: 100%;
+      transition: all 4s ease;
+    }
+  }
+
+  &:hover .project-screenshot{
+    transform: translateY(-70%);
   }
 }

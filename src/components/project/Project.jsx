@@ -1,14 +1,19 @@
 import './project.scss';
 
-const Project = () => {
+const Project = (props) => {
+  const { img, link } = props;
+
   return (
-    <card className="project">
+    <div className="project">
       <div className="project__browser">
         <div className="circle"></div>
         <div className="circle"></div>
         <div className="circle"></div>
       </div>
-    </card>
+      <a href={link} className="project__link" target="_blank">
+        <img className="project-screenshot" src={img} alt="project screenshot" />
+      </a>
+    </div>
   );
 }
 
