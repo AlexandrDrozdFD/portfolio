@@ -1,10 +1,30 @@
-
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import discord from '../../img/discord.png';
 import address from '../../img/address.png';
 import email from '../../img/email.png';
 import './contact.scss';
 
+
 const Contact = () => {
+  const form = useRef();
+
+  const [done, setDone] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_etl4qqb', 'template_ql8qxlk', form.current, 'l-X0CzfHA79de1Uwy')
+      .then((result) => {
+        console.log(result.text);
+        setDone(true);
+      }, (error) => {
+        console.log(error.text);
+      });
+
+  }
+
+  console.log(done);
+
   return (
     <section className="contact">
       <div className="contact__bg-left"></div>
@@ -41,12 +61,17 @@ const Contact = () => {
             <b>Let's discuss!</b> Get in touch. Always available for
             freelancing.
           </p>
-          <form className="content-right__form">
+          <form
+            className="content-right__form"
+            ref={form}
+            onSubmit={handleSubmit}
+          >
             <input type="text" className="form-input" placeholder="Name" name="user_name" />
             <input type="text" className="form-input" placeholder="Subject" name="user_subject" />
             <input type="text" className="form-input" placeholder="Email" name="user_email" />
-            <textarea rows="5" className="form-textarea" placeholder="Message" name="user_message" />
+            <textarea rows="5" className="form-textarea" placeholder="Message" name="message" />
             <button className="form-btn">Submit</button>
+            {done && <div className="form-greeting">Thank you!</div>}
           </form>
         </div>
       </div>
