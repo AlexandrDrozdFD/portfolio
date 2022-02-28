@@ -1,5 +1,5 @@
 .contact {
-  height: 100vh;
+  height: 100vh;  //todo
 
   &__bg-left {
     width: 2rem;
@@ -40,7 +40,7 @@
           &__link {
             text-decoration: none;
             transition: all .4s;
-            color: black;
+            color: rgb(112, 112, 112);
           }
         }
       }
