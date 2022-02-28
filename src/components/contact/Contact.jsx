@@ -21,9 +21,7 @@ const Contact = () => {
         console.log(error.text);
       });
 
-  }
-
-  console.log(done);
+  };
 
   return (
     <section className="contact">
@@ -33,7 +31,7 @@ const Contact = () => {
           <h2 className="content-left__title">
             Let's discuss your project
           </h2>
-          <dev className="content-left__info">
+          <div className="content-left__info">
             <div className="info">
               <img src={discord} alt="" className="info__icon" />
               <a className="info__link"
@@ -54,7 +52,7 @@ const Contact = () => {
               <img src={email} alt="" className="info__icon" />
               <a className="info__link" href="mailto:alex.drozd.fd@gmail.com?subject=Mail">alex.drozd.fd@gmail.com</a>
             </div>
-          </dev>
+          </div>
         </div>
         <div className="content-right">
           <p className="content-right__description">
@@ -66,10 +64,10 @@ const Contact = () => {
             ref={form}
             onSubmit={handleSubmit}
           >
-            <input type="text" className="form-input" placeholder="Name" name="user_name" />
-            <input type="text" className="form-input" placeholder="Subject" name="user_subject" />
-            <input type="text" className="form-input" placeholder="Email" name="user_email" />
-            <textarea rows="5" className="form-textarea" placeholder="Message" name="message" />
+            <input type="text" className="form-input" placeholder="Name" name="user_name" required />
+            <input type="text" className="form-input" placeholder="Subject" name="user_subject" required />
+            <input type="email" className="form-input" placeholder="Email" name="user_email" required />
+            <textarea rows="5" className="form-textarea" placeholder="Message" name="message" required />
             <button className="form-btn">Submit</button>
             {done && <div className="form-greeting">Thank you!</div>}
           </form>
