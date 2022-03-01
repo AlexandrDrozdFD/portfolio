@@ -62,6 +62,10 @@
     position: relative;
 
     .person-bg {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
       height: 100%;
       width: 100%;
       clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
@@ -69,6 +73,23 @@
       position: absolute;
       top: 0;
       right: 0;
+      z-index: 0;
+      
+      .btn-download {
+        text-decoration: none;
+        color: var(--white);
+        background-color: DodgerBlue;
+        border: none;
+        color: var(--white);
+        padding: 1.2rem 3rem;
+        cursor: pointer;
+        font-size: 2rem;
+        z-index: 88888;
+  
+        &:hover {
+          background-color: RoyalBlue;
+        }
+      }
     }
 
     .person {
@@ -76,6 +97,20 @@
       height: 100%;
       object-fit: contain;
       position: absolute;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+
+    &__left {
+      .left-wrap {
+        padding: 0;
+        padding-left: 2rem;
+      }
     }
   }
 }

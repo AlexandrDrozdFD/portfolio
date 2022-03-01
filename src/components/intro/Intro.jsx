@@ -1,5 +1,5 @@
 import './intro.scss';
-// import me from '../../img/me.png';
+import cv from './assets/cv_Drozd.pdf';
 
 const Intro = () => {
   return (
@@ -17,7 +17,7 @@ const Intro = () => {
               <div className="title__item">Front-end Developer</div>
               <div className="title__item">UX</div>
               <div className="title__item">UI</div>
-              <div className="title__item">Node</div>
+              <div className="title__item">React</div>
               <div className="title__item">Drupal</div>
             </div>
           </div>
@@ -27,8 +27,16 @@ const Intro = () => {
         </div>
       </div>
       <div className="intro__right">
-        <div className="person-bg"></div>
-        {/* <img src={me} alt="person" className='person'/> */}
+        <div className="person-bg">
+          <a
+            className="btn-download"
+            href={cv}
+            download
+          >
+            <i class="fa fa-download"></i> Download CV
+          </a>
+        </div>
+
       </div>
     </section>
   );
