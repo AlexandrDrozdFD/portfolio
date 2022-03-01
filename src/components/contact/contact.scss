@@ -4,7 +4,7 @@
   &__bg-left {
     width: 2rem;
     height: 100%;
-    background-color: #59b256;
+    background-color: var(--green);
     position: absolute;
   }
 
@@ -18,7 +18,7 @@
 
       &__title {
         font-size: 2em;
-        color: #59b256;
+        color: var(--green);
       }
 
       &__info {
@@ -29,7 +29,7 @@
           align-items: center;
           
           &:hover .info__link {
-            color: #59b256;
+            color: var(--green);
           }
 
           &__icon {
@@ -40,7 +40,7 @@
           &__link {
             text-decoration: none;
             transition: all .4s;
-            color: rgb(112, 112, 112);
+            color: var(--link-textarea-color);
           }
         }
       }
@@ -65,7 +65,7 @@
           margin: 1rem 0;
           font-size: 1.4rem;
           padding-left: 1rem;
-          color: rgb(112, 112, 112);
+          color: var(--link-textarea-color);
         }
 
         .form-textarea {
@@ -73,21 +73,21 @@
           margin: 1rem 0;
           font-size: 1.4rem;
           padding: 1rem;  
-          color: rgb(112, 112, 112);
+          color: var(--link-textarea-color);
         }
 
         .form-btn {
           width: 15rem;
           border: none;
           padding: 1.5rem;
-          background-color: #59b256;
-          color: white;
+          background-color: var(--green);
+          color: var(--white);
           cursor: pointer;
           font-weight: 700;
         }
 
         .form-greeting {
-          color: #59b256;
+          color: var(--green);
           margin: 1rem;
         }
       } 

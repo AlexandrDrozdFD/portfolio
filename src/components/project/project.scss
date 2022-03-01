@@ -1,5 +1,5 @@
 .project {
-  border: 0.2rem solid rgb(190, 240, 180);
+  border: 0.2rem solid var(--green-light);
   margin: 2rem 1rem;
   width: 30rem; //todo
   height: 18rem; //todo
@@ -7,7 +7,7 @@
 
   &__browser {
     height: 2rem;
-    background-color: rgb(190, 240, 180);
+    background-color: var(--green-light);
     display: flex;
     align-items: center;
     z-index: 9;
@@ -16,7 +16,7 @@
     .circle {
       height: 0.6rem;
       width: 0.6rem;
-      background-color: #ffffff;
+      background-color: var(--white);
       border-radius: 50%;
       margin: 0 0.1rem;
     }

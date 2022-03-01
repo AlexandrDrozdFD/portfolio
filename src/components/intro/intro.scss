@@ -48,7 +48,7 @@
           &__item {
             height: 5rem;
             font-size: 3rem;
-            color: #59b256;
+            color: var(--green);
             display: flex;
             align-items: center;
           }
@@ -65,7 +65,7 @@
       height: 100%;
       width: 100%;
       clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-      background-color: #59b256;
+      background-color: var(--green);
       position: absolute;
       top: 0;
       right: 0;

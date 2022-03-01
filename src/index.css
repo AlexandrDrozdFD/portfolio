@@ -2,6 +2,10 @@
 
 
 :root {
+  --green: #59b256;
+  --green-light: rgb(190, 240, 180);
+  --white: #ffffff;
+  --link-textarea-color: rgb(112, 112, 112);
   font-size: 62.5%;
 }
 

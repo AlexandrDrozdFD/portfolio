@@ -33,7 +33,7 @@
     align-items: center;
 
     .title {
-      color: #59b256;
+      color: var(--green);
     }
 
     .about-sub-desc {
@@ -43,7 +43,7 @@
     .divider {
       margin-top: 2rem;
       width: 100%;
-      background-color: #59b256;
+      background-color: var(--green);
       height: 2rem;
     }
   }
