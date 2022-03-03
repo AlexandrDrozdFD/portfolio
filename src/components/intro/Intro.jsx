@@ -1,5 +1,4 @@
 import './intro.scss';
-import cv from './assets/cv_Drozd.pdf';
 
 const Intro = () => {
   return (
@@ -21,24 +20,24 @@ const Intro = () => {
               <div className="title__item">Drupal</div>
             </div>
           </div>
-          <p className="left-wrap__description">
-            TEXT about me
-          </p>
+          <div className="left-wrap__description">
+
+          </div>
         </div>
       </div>
       <div className="intro__right">
         <div className="person-bg">
           <a
-            className="btn-download"
-            href={cv}
-            download
+            className="btn-about"
+            href="#about"
           >
-            <i class="fa fa-download"></i> Download CV
+            Know more
           </a>
         </div>
 
       </div>
     </section>
+
   );
 };
 
