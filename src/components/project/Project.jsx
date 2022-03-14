@@ -1,7 +1,6 @@
 import './project.scss';
 
-const Project = (props) => {
-  const { img, link } = props;
+const Project = ({ img, link }) => {
 
   return (
     <div className="project">

@@ -126,6 +126,13 @@
       }
       &__right {
         padding: 5rem 2rem;
+
+        .btns {
+          .btn-download,
+          .btn-projects {
+            font-size: 1.3rem;
+          }
+        }
       }
     }
     }
