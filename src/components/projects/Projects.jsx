@@ -10,12 +10,15 @@ const Projects = () => {
       </div>
       <div className="projects__items">
         {projects.map((el) => {
-          return <Project key={el.id} img={el.img} link={el.link} />
+          return <Project key={el.id}
+            img={el.img}
+            link={el.link}
+            title={el.title}
+            desc={el.desc}
+            git={el.git}
+          />
         })}
       </div>
-      <p className="projects-desc">
-        
-      </p>
     </section>
   );
 }

@@ -1,35 +1,99 @@
-.project {
-  border: 0.2rem solid var(--green-light);
-  margin: 2rem 1rem;
-  width: 30rem; //todo
-  height: 18rem; //todo
-  overflow: hidden; //todo
-
-  &__browser {
-    height: 2rem;
-    background-color: var(--green-light);
+.project-item {
+  // max-width: 50rem; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  &__desc {
+    margin: 2rem 1rem;
     display: flex;
+    flex-direction: column;
+    width: 35%;
+
+    .desc-text {
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+    }
+
+    .github-link {
+      padding: 0.7rem 1rem;
+      margin-top: 4rem;
+      width: 20rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none; 
+      border: 0.2rem solid var(--green);
+      color: var(--green);
+      transition: all .5s;
+
+      &__text {
+        margin-right: 1rem;
+      }
+
+      &__icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &:hover {
+        background-color: var(--green);
+        color: white;
+      }
+    }
+  }
+
+  .project {
+    border: 0.2rem solid var(--green-light);
+    margin: 2rem 1rem;
+    width: 65%; //todo
+    height: 35rem; //todo
+    overflow: hidden; //todo
+  
+    &__browser {
+      height: 2rem;
+      background-color: var(--green-light);
+      display: flex;
+      align-items: center;
+      z-index: 9;
+      position: sticky;
+      
+      .circle {
+        height: 0.6rem;
+        width: 0.6rem;
+        background-color: var(--white);
+        border-radius: 50%;
+        margin: 0 0.1rem;
+      }
+    }
+  
+    &__link {
+      .project-screenshot {
+        width: 100%;
+        transition: all 4s ease;
+      }
+    }
+  
+    &:hover .project-screenshot{
+      transform: translateY(-70%);
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-item {
+    flex-direction: column;
     align-items: center;
-    z-index: 9;
-    position: sticky;
-    
-    .circle {
-      height: 0.6rem;
-      width: 0.6rem;
-      background-color: var(--white);
-      border-radius: 50%;
-      margin: 0 0.1rem;
-    }
-  }
 
-  &__link {
-    .project-screenshot {
-      width: 100%;
-      transition: all 4s ease;
+    &__desc {
+      width: 85%;
     }
-  }
 
-  &:hover .project-screenshot{
-    transform: translateY(-70%);
+    .project {
+      width: 85%;
+    }
   }
 }

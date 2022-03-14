@@ -1,7 +1,8 @@
 .projects {
   // height: 100vh; //todo
+  max-width: 129rem;
+  margin: 0 auto;
   padding: 10rem 10rem;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,6 +11,7 @@
   &__caption {
     width: 65%;
     margin-bottom: 3rem;
+    text-align: center;
 
     .projects-title {
       color: var(--green);
@@ -24,8 +26,7 @@
   &__items {
     // width: 100%; todo
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
   }
 
 }
