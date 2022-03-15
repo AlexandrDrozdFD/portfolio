@@ -1,10 +1,20 @@
-import './project.scss';
+import { useEffect } from 'react';
 import { FaGithub } from 'react-icons/fa';
+import WOW from 'wowjs';
+import './project.scss';
+import 'animate.css';
+
 
 const Project = ({ img, link, title, desc, git }) => {
 
+  useEffect(() => {
+    new WOW.WOW({
+      live: false
+    }).init();
+  }, [])
+
   return (
-    <div className="project-item">
+    <div className="project-item wow animate__animated animate__fadeInLeftBig">
       <div className="project-item__desc">
         <h2>{title}</h2>
         <p className="desc-text">{desc}</p>
