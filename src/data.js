@@ -2,8 +2,6 @@ import dana from './img/danalac.png';
 import shelter from './img/shelter.jpg';
 import cocapi from './img/cocapi.jpg';
 import wildlife from './img/wildlife.jpg';
-import githubUsers from './img/githubUsers.jpg';
-import drupal from './img/drupal.jpg';
 
 export const projects = [
   {
