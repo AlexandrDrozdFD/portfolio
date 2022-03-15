@@ -1,8 +1,8 @@
-import './project.scss';
+import { useEffect } from 'react';
 import { FaGithub } from 'react-icons/fa';
 import WOW from 'wowjs';
+import './project.scss';
 import 'animate.css';
-import { useEffect } from 'react';
 
 
 const Project = ({ img, link, title, desc, git }) => {
