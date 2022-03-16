@@ -21,7 +21,6 @@ const Intro = () => {
             </div>
           </div>
           <div className="left-wrap__description">
-
           </div>
         </div>
       </div>
@@ -34,10 +33,8 @@ const Intro = () => {
             Know more
           </a>
         </div>
-
       </div>
     </section>
-
   );
 };
 

@@ -4,14 +4,13 @@ import WOW from 'wowjs';
 import './project.scss';
 import 'animate.css';
 
-
 const Project = ({ img, link, title, desc, git }) => {
 
   useEffect(() => {
     new WOW.WOW({
       live: false
     }).init();
-  }, [])
+  }, []);
 
   return (
     <div className="project-item wow animate__animated animate__fadeInLeftBig">

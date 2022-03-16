@@ -1,5 +1,4 @@
 .projects {
-  // height: 100vh; //todo
   max-width: 129rem;
   margin: 0 auto;
   padding: 10rem 10rem;
@@ -24,11 +23,9 @@
   }
 
   &__items {
-    // width: 100%; todo
     display: flex;
     flex-direction: column;
   }
-
 }
 
 @media only screen and (max-width: 1000px) {
