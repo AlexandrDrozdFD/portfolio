@@ -22,7 +22,6 @@
       }
 
       &__info {
-
         .info {
           margin: 2rem 1rem;
           display: flex;
@@ -105,6 +104,13 @@
 
     &__content {
       flex-direction: column;
+      .content-right {
+        &__form {
+          .form-input {
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }
