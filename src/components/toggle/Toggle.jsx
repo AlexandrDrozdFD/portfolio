@@ -10,6 +10,7 @@ const Toggle = () => {
   const handleClick = () => {
     theme.dispatch({ type: 'TOGGLE' });
   };
+  
   return (
     <div className="t">
       <img src={Sun} alt="Sun" className="t-icon" />

@@ -1,6 +1,6 @@
-import './projects.scss';
 import Project from '../project/Project';
 import { projects } from '../../data';
+import './projects.scss';
 
 const Projects = () => {
   return (

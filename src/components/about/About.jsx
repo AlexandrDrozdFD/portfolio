@@ -1,7 +1,7 @@
-import './about.scss';
-import face from '../../img/face.jpg';
-import cv from './assets/cv_Drozd.pdf';
 import { FaDownload } from 'react-icons/fa';
+import cv from './assets/cv_Drozd.pdf';
+import face from '../../img/face.jpg';
+import './about.scss';
 
 const About = () => {
   return (
@@ -30,7 +30,6 @@ const About = () => {
             Believe in constant learning that enhances my coding skills more and more.
           </p>
           <div className="divider"></div>
-
           <div className="btns">
             <a className="btn-download" href={cv} download>
               <FaDownload /> Download CV
